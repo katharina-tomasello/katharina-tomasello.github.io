@@ -80,6 +80,11 @@ nav a:hover {
 }
 
 /* HERO */
+@media (max-width: 768px) {
+  .hero {
+    padding: 80px 20px 0;
+  }
+}
 .hero {
   min-height: 100vh;
   background: linear-gradient(
