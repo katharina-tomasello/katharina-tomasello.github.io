@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -5,127 +7,241 @@
 }
 
 :root {
-  --blanco: #ffffff;
-  --negro: #000000;
-  --dorado: #c7a85a;
+  --pitch: #1e1e1c;
+  --marfil: #ffffff;
+  --must: #cea93a;
+  --yellish: #eccc47;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  font-family: Aptos, display;
-  background: var(--blanco);
-  color: var(--negro);
-  line-height: 1.6;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  background: var(--marfil);
+  color: var(--pitch);
+  line-height: 1.7;
 }
 
 /* NAV */
 nav {
-  background: var(--negro);
-  color: var(--blanco);
+  background: var(--pitch);
+  color: var(--marfil);
   display: flex;
   justify-content: space-between;
-  padding: 15px 40px;
+  align-items: center;
+  padding: 18px 50px;
   position: sticky;
   top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--must);
 }
 
 nav ul {
   list-style: none;
   display: flex;
-  gap: 20px;
+  gap: 28px;
+  margin: 0;
 }
 
 nav a {
-  color: var(--blanco);
+  color: var(--marfil);
   text-decoration: none;
+  font-weight: 400;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: var(--must);
 }
 
 /* HERO */
 .hero {
-  background: var(--dorado);
-  color: var(--blanco);
+  background: linear-gradient(rgba(30,30,28,0.82), rgba(30,30,28,0.82)),
+              url("images/Basico_transparente.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center right;
+  color: var(--marfil);
   text-align: center;
-  padding: 80px 20px;
+  padding: 110px 20px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  max-width: 650px;
+  margin: auto;
+  font-size: 1.1rem;
 }
 
 .boton {
   display: inline-block;
-  margin-top: 20px;
-  background: var(--negro);
-  color: var(--blanco);
-  padding: 10px 25px;
+  margin-top: 30px;
+  background: var(--must);
+  color: var(--pitch);
+  padding: 12px 30px;
+  border-radius: 30px;
   text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.boton:hover {
+  background: var(--yellish);
+  transform: translateY(-2px);
+}
+
+/* CARRUSEL */
+.carousel {
+  max-width: 750px;
+  margin: 60px auto;
+}
+
+.carousel img {
+  max-height: 420px;
+  object-fit: contain;
 }
 
 /* SECCIONES */
 section {
-  padding: 60px 40px;
+  padding: 80px 40px;
+}
+
+section h2 {
   text-align: center;
+  font-size: 2.3rem;
+  font-weight: 600;
+  margin-bottom: 50px;
+  color: var(--pitch);
 }
 
 .oscuro {
-  background: var(--negro);
-  color: var(--blanco);
+  background: var(--pitch);
+  color: var(--marfil);
 }
 
-/* CARDS */
+.oscuro h2 {
+  color: var(--must);
+}
+
+/* PRODUCTOS */
 .cards {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 35px;
   flex-wrap: wrap;
 }
 
 .card {
-  border: 1px solid var(--negro);
-  padding: 20px;
-  max-width: 250px;
+  width: 320px;
+  border: none;
+  border-radius: 18px;
+  padding: 35px 25px;
+  background: var(--marfil);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* LISTA */
-ul {
-  list-style: none;
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 14px 36px rgba(0,0,0,0.14);
 }
 
-li {
+.card img {
+  width: 130px;
+  height: auto;
+  display: block;
+  margin: 0 auto 22px auto;
+}
+
+.card h3 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 18px;
+  color: var(--pitch);
+}
+
+.card p {
+  font-size: 0.98rem;
+  color: #555;
+}
+
+/* BENEFICIOS */
+#beneficios ul {
+  max-width: 700px;
+  margin: auto;
+  padding: 0;
+}
+
+#beneficios li {
+  margin: 18px 0;
+  font-size: 1.05rem;
+}
+
+/* CONTACTO */
+#contacto p {
   margin: 10px 0;
+  font-size: 1rem;
 }
 
 /* FOOTER */
 footer {
-  background: var(--negro);
-  color: var(--blanco);
+  background: var(--pitch);
+  color: #bdbdbd;
   text-align: center;
-  padding: 15px;
+  padding: 20px;
+  font-size: 0.9rem;
+  font-family: 'Myriad Pro', sans-serif;
 }
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
   nav {
     flex-direction: column;
-    align-items: center;
-    gap: 10px;
+    gap: 14px;
+    padding: 18px 20px;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .hero {
+    padding: 80px 20px;
+    background-position: center bottom;
+    background-size: 250px;
+  }
+
+  .hero h1 {
+    font-size: 2.2rem;
   }
 
   .cards {
     flex-direction: column;
     align-items: center;
   }
-}
 
-.carousel {
-  max-width: 600px;
-  margin: auto;
-}
+  .card {
+    width: 100%;
+    max-width: 340px;
+  }
 
-.carousel img {
-  object-fit: contain;
-  max-height: 400px;
-}
-
-/* IMÁGENES DE PRODUCTOS */
-.card img {
-  width: 120px;       /* podés probar 100px, 120px o 150px */
-  height: auto;
-  display: block;
-  margin: 0 auto 10px auto;
+  .carousel {
+    max-width: 90%;
+  }
 }
