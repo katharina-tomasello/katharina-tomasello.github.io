@@ -22,8 +22,8 @@ html {
 body {
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
-  background: var(--marfil);
-  color: var(--pitch);
+  background: var(--blanco);
+  color: var(--negro);
   line-height: 1.7;
 }
 
@@ -162,16 +162,16 @@ section h2 {
   font-size: 2.3rem;
   font-weight: 600;
   margin-bottom: 50px;
-  color: var(--pitch);
+  color: var(--negro);
 }
 
 .oscuro {
-  background: var(--pitch);
-  color: var(--marfil);
+  background: var(--negro);
+  color: var(--blanco);
 }
 
 .oscuro h2 {
-  color: var(--must);
+  color: var(--dorado);
 }
 
 /* PRODUCTOS */
