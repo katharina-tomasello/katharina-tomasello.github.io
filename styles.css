@@ -50,6 +50,7 @@ nav.scrolled {
 
 .logo img {
   height: 42px;
+  width: auto;
 }
 
 nav ul {
