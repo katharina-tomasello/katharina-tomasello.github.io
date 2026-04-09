@@ -169,6 +169,10 @@ section h2 {
 }
 
 /* PRODUCTOS */
+#productos {
+  background: var(--gris);
+  color: var(--blanco);
+}
 .cards {
   display: flex;
   justify-content: center;
@@ -212,6 +216,10 @@ section h2 {
 }
 
 /* BENEFICIOS */
+#beneficios {
+  background: var(--gris2);
+  color: var(--blanco);
+}
 #beneficios ul {
   max-width: 700px;
   margin: auto;
@@ -224,6 +232,10 @@ section h2 {
 }
 
 /* CONTACTO */
+#contacto {
+  background: #0f0f0f;
+  color: var(--blanco);
+}
 #contacto p {
   margin: 10px 0;
   font-size: 1rem;
