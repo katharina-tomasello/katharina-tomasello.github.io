@@ -49,8 +49,13 @@ nav.scrolled {
 }
 
 .logo img {
-  height: 42px;
+  height: 58px;
   width: auto;
+  transition: transform 0.3s ease;
+}
+
+.logo:hover img {
+  transform: scale(1.04);
 }
 
 nav ul {
@@ -215,6 +220,51 @@ section h2 {
   font-size: 0.98rem;
   color: #555;
 }
+.catalogo-box {
+  margin: 70px auto 0;
+  max-width: 760px;
+  background: linear-gradient(145deg, #171717, #101010);
+  border: 1px solid rgba(206,169,58,0.22);
+  border-radius: 24px;
+  padding: 50px 40px;
+  text-align: center;
+}
+
+.catalogo-subtitulo {
+  color: var(--dorado);
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-size: 0.85rem;
+  margin-bottom: 12px;
+}
+
+.catalogo-box h3 {
+  color: white;
+  font-size: 2rem;
+  margin-bottom: 18px;
+}
+
+.catalogo-box p {
+  color: #bcbcbc;
+  max-width: 600px;
+  margin: 0 auto 28px;
+}
+
+.boton-catalogo {
+  display: inline-block;
+  padding: 14px 34px;
+  border-radius: 40px;
+  background: var(--dorado);
+  color: #111;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.boton-catalogo:hover {
+  background: var(--dorado2);
+  transform: translateY(-3px);
+}
 
 /* BENEFICIOS */
 #beneficios {
@@ -227,9 +277,17 @@ section h2 {
   padding: 0;
 }
 
-#beneficios li {
-  margin: 18px 0;
-  font-size: 1.05rem;
+.beneficios-lista {
+  max-width: 700px;
+  margin: 0 auto;
+  padding-left: 20px;
+  text-align: left;
+  list-style-type: disc;
+}
+
+.beneficios-lista li {
+  margin: 16px 0;
+  color: #d8d8d8;
 }
 
 /* CONTACTO */
@@ -244,12 +302,55 @@ section h2 {
 
 /* FOOTER */
 footer {
-  background: var(--pitch);
-  color: #bdbdbd;
+  background: #0b0b0b;
+  padding: 70px 20px 35px;
+  border-top: 1px solid rgba(255,255,255,0.06);
+}
+
+.footer-contenido {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
-  padding: 20px;
+}
+
+.footer-logo {
+  width: 140px;
+  margin-bottom: 28px;
+}
+
+.footer-links {
+  display: flex;
+  gap: 28px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 28px;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
   font-size: 0.9rem;
-  font-family: 'Myriad Pro', sans-serif;
+  letter-spacing: 1px;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: var(--dorado);
+}
+
+.footer-contacto {
+  color: #bcbcbc;
+  line-height: 1.9;
+  margin-bottom: 28px;
+}
+
+.footer-copy {
+  color: #7e7e7e;
+  font-size: 0.85rem;
 }
 
 /* RESPONSIVE */
@@ -289,4 +390,15 @@ footer {
   .carousel {
     max-width: 90%;
   }
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(45px);
+  transition: all 0.9s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
