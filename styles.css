@@ -690,6 +690,17 @@ footer {
   z-index: 2;
 }
 
+.producto-portada {
+  position: relative;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  padding: 0 10%;
+  color: white;
+  background-size: cover;
+  background-position: center;
+}
+
 /* PORTADAS ESPECÍFICAS */
 .portada-essential {
   background-image: url("images/pareja-ancianos-BN.jpg");
@@ -703,17 +714,6 @@ footer {
 .portada-gm {
   background-image: url("images/niña-mujer-color.jpg");
   background-position: center 40%;
-}
-
-.producto-portada {
-  position: relative;
-  height: 60vh;
-  display: flex;
-  align-items: center;
-  padding: 0 10%;
-  color: white;
-  background-size: cover;
-  background-position: center;
 }
 
 .portada-texto h1 {
