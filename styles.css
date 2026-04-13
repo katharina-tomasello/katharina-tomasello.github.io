@@ -460,3 +460,60 @@ footer {
   text-decoration: none;
   cursor: pointer;
 }
+
+.producto-page {
+  background: #0f0f0f;
+  color: white;
+}
+
+.producto-hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 80px 10%;
+}
+
+.producto-contenido {
+  display: flex;
+  gap: 60px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.producto-img img {
+  width: 320px;
+}
+
+.producto-info {
+  max-width: 500px;
+}
+
+.producto-info h1 {
+  color: var(--dorado);
+  margin-bottom: 20px;
+}
+
+.producto-info ul {
+  margin-bottom: 20px;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  background: #111;
+  padding: 10px 0;
+  display: none;
+}
+
+.dropdown-menu li {
+  padding: 10px 20px;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
