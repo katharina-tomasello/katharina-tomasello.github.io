@@ -95,8 +95,7 @@ nav a:hover {
   background: linear-gradient(
       rgba(0,0,0,0.45),
       rgba(0,0,0,0.45)
-    ),
-    url("images/sonrisa-mujer-BN.jpg");
+    )
 
   background-size: cover;
   background-position: center;
@@ -718,4 +717,56 @@ footer {
 
 .portada-texto p {
   font-size: 1.1rem;
+}
+
+.seccion-destacada {
+  background: #0b0b0b;
+  padding: 100px 8%;
+}
+
+.contenedor-destacado {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.lado {
+  flex: 1;
+  min-width: 300px;
+}
+
+/* IMAGEN */
+.imagen-lado img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+/* CARRUSEL */
+.carrusel-lado {
+  background: #111;
+  padding: 40px;
+  border-radius: 20px;
+}
+
+.carousel img {
+  max-height: 350px;
+  object-fit: contain;
+  filter: drop-shadow(0 20px 40px rgba(0,0,0,0.6));
+}
+
+/* FLECHAS VISIBLES */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(70%) sepia(60%) saturate(500%) hue-rotate(10deg);
+}
+
+@media (max-width: 768px) {
+  .contenedor-destacado {
+    flex-direction: column;
+    text-align: center;
+  }
 }
