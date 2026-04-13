@@ -25,7 +25,11 @@ body {
   background: var(--blanco);
   color: var(--negro);
   line-height: 1.7;
-  padding-top: 90px;
+  padding-top: 0;
+}
+
+.hero {
+  padding-top: 120px;
 }
 
 /* NAV */
@@ -95,6 +99,18 @@ nav a:hover {
   background: radial-gradient(circle at 70% 50%, #1a1a1a 0%, #0f0f0f 70%);
 }
 
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    gap: 40px;
+  }
+
+  .hero-texto {
+    max-width: 100%;
+  }
+}
+
 .hero-texto {
   max-width: 600px;
 }
@@ -134,8 +150,8 @@ nav a:hover {
 }
 
 .hero-imagen img {
-  width: 420px;
-  max-width: 100%;
+  width: 100%;
+  max-width: 320px;
   filter: drop-shadow(0 0 35px rgba(206,169,58,0.18));
 }
 
@@ -380,6 +396,18 @@ footer {
     gap: 15px;
   }
 
+  @media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    padding: 15px 20px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+  
   .hero {
     padding: 80px 20px;
     background-position: center bottom;
@@ -664,6 +692,17 @@ footer {
 
 .zoom-container:hover img {
   transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  .bloque {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .bloque-img img {
+    width: 100%;
+  }
 }
 
 /* BASE DE PORTADAS */
