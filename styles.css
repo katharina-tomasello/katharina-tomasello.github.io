@@ -578,3 +578,67 @@ footer {
     flex-direction: column;
   }
 }
+
+.producto-page {
+  background: #0f0f0f;
+  color: white;
+}
+
+/* PORTADA */
+.producto-portada {
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  padding: 0 10%;
+  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+              url("images/pareja-ancianos-BN.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.portada-texto h1 {
+  font-size: 3rem;
+  color: var(--dorado);
+}
+
+.portada-texto p {
+  color: #ccc;
+  margin-top: 10px;
+}
+
+/* BLOQUES */
+.producto-bloques {
+  padding: 80px 0;
+}
+
+.bloque {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px 10%;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.bloque.invertido {
+  flex-direction: row-reverse;
+}
+
+.bloque-texto {
+  max-width: 500px;
+}
+
+.bloque-texto h2 {
+  color: var(--dorado);
+  margin-bottom: 20px;
+}
+
+.bloque-texto p,
+.bloque-texto li {
+  color: #bcbcbc;
+}
+
+.bloque-img img {
+  width: 400px;
+  max-width: 100%;
+}
