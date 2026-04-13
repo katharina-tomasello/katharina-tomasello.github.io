@@ -692,10 +692,12 @@ footer {
 
 .portada-hi {
   background-image: url("images/hombre-color.jpg");
+  background-position: center 30%;
 }
 
 .portada-gm {
   background-image: url("images/niña-mujer-color.jpg");
+  background-position: center 30%;
 }
 
 .producto-portada {
