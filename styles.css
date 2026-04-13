@@ -91,14 +91,8 @@ nav a:hover {
   align-items: center;
   padding: 0 8%;
   color: white;
-
-  background: linear-gradient(
-      rgba(0,0,0,0.45),
-      rgba(0,0,0,0.45)
-    )
-
-  background-size: cover;
-  background-position: center;
+  
+  background: radial-gradient(circle at 70% 50%, #1a1a1a 0%, #0f0f0f 70%);
 }
 
 .hero-texto {
@@ -125,6 +119,18 @@ nav a:hover {
   font-size: 1.1rem;
   max-width: 500px;
   margin-bottom: 35px;
+}
+
+.hero h1 {
+  color: white;
+}
+
+.hero .descripcion {
+  color: #cfcfcf;
+}
+
+.subtitulo {
+  color: var(--dorado);
 }
 
 .hero-imagen img {
