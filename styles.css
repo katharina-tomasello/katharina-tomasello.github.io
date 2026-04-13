@@ -591,12 +591,12 @@ footer {
 
 /* PORTADA */
 .producto-portada {
+  position: relative;
   height: 60vh;
   display: flex;
   align-items: center;
   padding: 0 10%;
-  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
-              url("images/pareja-ancianos-BN.jpg");
+  color: white;
   background-size: cover;
   background-position: center;
 }
