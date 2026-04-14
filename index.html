@@ -57,40 +57,6 @@
   </div>
 </nav>
   
-    <!-- MENÚ -->
-    <div class="collapse navbar-collapse" id="menuNav">
-      <ul class="navbar-nav ms-auto">
-
-        <li class="nav-item">
-          <a class="nav-link" href="#inicio">Inicio</a>
-        </li>
-
-        <!-- DROPDOWN -->
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
-            Productos
-          </a>
-          <ul class="dropdown-menu dropdown-menu-dark">
-            <li><a class="dropdown-item" href="essential.html">Dynamic Essential</a></li>
-            <li><a class="dropdown-item" href="plus-hi.html">Dynamic Plus HI</a></li>
-            <li><a class="dropdown-item" href="plus-gm.html">Dynamic Plus GM</a></li>
-          </ul>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link" href="#nosotros">Nosotros</a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link" href="#contacto">Contacto</a>
-        </li>
-
-      </ul>
-    </div>
-
-  </div>
-</nav>
-
   <!-- HERO -->
   <section id="inicio" class="hero">
   <div class="hero-texto">
@@ -275,7 +241,7 @@
 <script>
   document.addEventListener("DOMContentLoaded", () => {
 
-    const nav = document.getElementById("navbar");
+    const nav = document.querySelector(".custom-nav");
 
     window.addEventListener("scroll", () => {
       if (window.scrollY > 50) {
