@@ -352,18 +352,6 @@ footer {
   font-size: 0.85rem;
 }
 
-  nav ul {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
-  }
-
-  nav ul {
-    flex-direction: column;
-    gap: 10px;
-  }
-}
-
   .hero h1 {
     font-size: 2.2rem;
   }
@@ -381,7 +369,6 @@ footer {
   .carousel {
     max-width: 90%;
   }
-}
 
 .reveal {
   opacity: 0;
@@ -548,11 +535,6 @@ footer {
 .bloque-img img {
   width: 420px;
   max-width: 100%;
-}
-
-  .bloque.invertido {
-    flex-direction: column;
-  }
 }
 
 .producto-page {
@@ -788,6 +770,56 @@ footer {
     padding: 100px 20px;
   }
 
+  .contenedor-destacado {
+    flex-direction: column;
+  }
+
+  .carrusel-lado {
+    order: 2;
+  }
+
+  .imagen-lado {
+    order: 1;
+  }
+
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .bloque {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .bloque.invertido {
+    flex-direction: column;
+  }
+
+}
+
+/* =========================
+   RESPONSIVE LIMPIO
+========================= */
+
+@media (max-width: 768px) {
+
+  nav {
+    flex-direction: column;
+    padding: 15px 20px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 100px 20px;
+  }
+
   .hero h1 {
     font-size: 2.2rem;
   }
@@ -818,4 +850,13 @@ footer {
     flex-direction: column;
   }
 
+}
+
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 8%;
+  background: #0f0f0f;
 }
