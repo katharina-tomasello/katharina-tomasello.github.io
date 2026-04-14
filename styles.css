@@ -515,7 +515,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 80px 10%;
+  padding: 80px 8%;
   gap: 60px;
   flex-wrap: wrap;
 }
@@ -785,4 +785,28 @@ footer {
 
 .nav-link:hover {
   color: var(--dorado) !important;
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
+* {
+  max-width: 100%;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .bloque {
+    padding: 60px 20px;
+  }
+}
+
+.hero,
+.producto-portada {
+  margin-top: 80px;
 }
