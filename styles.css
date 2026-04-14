@@ -673,16 +673,6 @@ footer {
 
 @media (max-width: 768px) {
 
-  nav {
-    flex-direction: column;
-    padding: 15px 20px;
-  }
-
-  nav ul {
-    flex-direction: column;
-    gap: 10px;
-  }
-
   .hero {
     flex-direction: column;
     text-align: center;
@@ -723,16 +713,10 @@ footer {
 
 @media (max-width: 768px) {
 
-  nav {
-    flex-direction: column;
-    padding: 15px 20px;
-  }
-
-  nav ul {
-    flex-direction: column;
-    gap: 10px;
-  }
-
+  /* =========================
+   posinble nav
+========================= */
+  
   .hero {
     flex-direction: column;
     text-align: center;
