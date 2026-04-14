@@ -487,7 +487,9 @@ footer {
 /* PORTADA */
 .producto-portada {
   position: relative;
-  height: 60vh;
+  min-height: 320px;
+  height: 40vh;
+  padding-top: 120px;
   display: flex;
   align-items: center;
   padding: 0 10%;
@@ -701,30 +703,13 @@ footer {
   .bloque {
     flex-direction: column;
     text-align: center;
+    padding: 60px 20px;
   }
 
   .bloque.invertido {
     flex-direction: column;
   }
-
-}
-
-/* =========================
-   RESPONSIVE LIMPIO
-========================= */
-
-@media (max-width: 768px) {
-
-  /* =========================
-   posinble nav
-========================= */
   
-  .hero {
-    flex-direction: column;
-    text-align: center;
-    padding: 100px 20px;
-  }
-
   .hero h1 {
     font-size: 2.2rem;
   }
@@ -746,13 +731,22 @@ footer {
     align-items: center;
   }
 
-  .bloque {
-    flex-direction: column;
-    text-align: center;
-  }
-
   .bloque.invertido {
     flex-direction: column;
+  }
+
+  .producto-portada {
+    height: 35vh;
+    min-height: 260px;
+    padding-top: 100px;
+  }
+
+  .portada-texto h1 {
+    font-size: 2rem;
+  }
+
+  .portada-texto p {
+    font-size: 0.95rem;
   }
 
 }
@@ -800,12 +794,6 @@ html, body {
 img {
   max-width: 100%;
   height: auto;
-}
-
-@media (max-width: 768px) {
-  .bloque {
-    padding: 60px 20px;
-  }
 }
 
 .hero,
