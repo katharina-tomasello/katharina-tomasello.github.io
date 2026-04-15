@@ -589,12 +589,12 @@ footer {
 
 .portada-hi {
   background-image: url("images/hombre-color.jpg");
-  background-position: center 65%;
+  background-position: center 80%;
 }
 
 .portada-gm {
   background-image: url("images/niña-mujer-color.jpg");
-  background-position: center 55%;
+  background-position: center 75%;
 }
 
 .portada-texto h1 {
@@ -655,10 +655,16 @@ footer {
 
 .portada-hi::before,
 .portada-gm::before {
+  position: relative;
+}
+
+.portada-hi::before,
+.portada-gm::before {
   content: "";
   position: absolute;
   inset: 0;
   background: rgba(0,0,0,0.55);
+  backdrop-filter: grayscale(100%) contrast(0.9);
 }
 
 .portada-texto {
