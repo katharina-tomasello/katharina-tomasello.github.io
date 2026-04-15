@@ -499,7 +499,6 @@ footer {
 }
 
 .portada-texto h1 {
-  font-size: 3rem;
   color: var(--dorado);
 }
 
@@ -596,7 +595,7 @@ footer {
 }
 
 .portada-texto h1 {
-  font-size: 3.2rem;
+   font-size: 2.4rem;
   font-weight: 600;
 }
 
@@ -675,6 +674,16 @@ footer {
 
 @media (max-width: 768px) {
 
+  .producto-portada {
+    height: 30vh;
+    min-height: 220px;
+    padding: 70px 20px 30px;
+  }
+
+  .portada-texto h1 {
+    font-size: 1.8rem;
+  }
+  
   .hero {
     flex-direction: column;
     text-align: center;
@@ -796,7 +805,14 @@ img {
   height: auto;
 }
 
-.hero,
 .producto-portada {
-  margin-top: 80px;
+  position: relative;
+  min-height: 260px;
+  height: 35vh;
+  padding: 80px 10% 40px;
+  display: flex;
+  align-items: center;
+  color: white;
+  background-size: cover;
+  background-position: center;
 }
