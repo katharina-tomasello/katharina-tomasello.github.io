@@ -31,9 +31,12 @@ body {
 
 /* NAV */
 .logo img {
-  height: 58px;
   width: auto;
   transition: transform 0.3s ease;
+}
+
+.navbar-brand img {
+  height: 40px;
 }
 
 .logo:hover img {
@@ -769,10 +772,14 @@ footer {
   background: #0f0f0f;
 }
 
+.navbar {
+  min-height: 60px;
+}
+
 .custom-nav {
    background: linear-gradient(to bottom, rgba(0,0,0,0.85), rgba(0,0,0,0));
   backdrop-filter: blur(10px);
-  padding: 15px 40px;
+  padding: 8px 30px;
   transition: all 0.3s ease;
 }
 
@@ -815,4 +822,9 @@ img {
   color: white;
   background-size: cover;
   background-position: center;
+}
+
+.hero,
+.producto-portada {
+  margin-top: 60px;
 }
