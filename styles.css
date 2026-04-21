@@ -843,6 +843,12 @@ section {
   scroll-margin-top: 100px;
 }
 
+#catalogo {
+  background: linear-gradient(180deg, #0f0f0f, #181818);
+  color: white;
+  padding: 100px 40px;
+}
+
 .catalogo-box {
   background: linear-gradient(145deg, #141414, #0d0d0d);
   border: 1px solid rgba(206,169,58,0.2);
