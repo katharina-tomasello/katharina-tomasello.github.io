@@ -834,3 +834,21 @@ img {
 .producto-portada {
   margin-top: 60px;
 }
+
+#catalogo {
+  scroll-margin-top: 100px;
+}
+
+section {
+  scroll-margin-top: 100px;
+}
+
+.catalogo-box {
+  background: linear-gradient(145deg, #141414, #0d0d0d);
+  border: 1px solid rgba(206,169,58,0.2);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+}
+
+.catalogo-box:hover {
+  box-shadow: 0 0 30px rgba(206,169,58,0.15);
+}
