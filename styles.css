@@ -875,11 +875,61 @@ section {
   justify-content: center;
   text-decoration: none;
   box-shadow: 0 10px 25px rgba(0,0,0,0.4);
-  transition: all 0.3s ease;
   z-index: 999;
+
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.4s ease;
 }
 
+/* aparece suave */
+.whatsapp-btn.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* hover */
 .whatsapp-btn:hover {
   transform: scale(1.1);
-  box-shadow: 0 15px 35px rgba(0,0,0,0.6);
+}
+
+/* 💓 latido SOLO cuando está activo */
+.whatsapp-btn.pulse {
+  animation: latido 2s infinite;
+}
+
+@keyframes latido {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.6);
+  }
+  70% {
+    transform: scale(1.08);
+    box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+  }
+}
+
+/* 🏷 tooltip */
+.tooltip {
+  position: absolute;
+  right: 70px;
+  background: #111;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  opacity: 0;
+  white-space: nowrap;
+  transform: translateX(10px);
+  transition: all 0.3s ease;
+}
+
+/* mostrar tooltip */
+.whatsapp-btn:hover .tooltip {
+  opacity: 1;
+  transform: translateX(0);
 }
