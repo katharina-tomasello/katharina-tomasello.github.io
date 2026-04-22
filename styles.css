@@ -655,11 +655,6 @@ footer {
 
 .portada-hi::before,
 .portada-gm::before {
-  position: relative;
-}
-
-.portada-hi::before,
-.portada-gm::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -932,4 +927,14 @@ section {
 .whatsapp-btn:hover .tooltip {
   opacity: 1;
   transform: translateX(0);
+}
+
+@media (max-width: 768px) {
+  .whatsapp-btn {
+    width: 55px;
+    height: 55px;
+    font-size: 22px;
+    bottom: 20px;
+    right: 20px;
+  }
 }
